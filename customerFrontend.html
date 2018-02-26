@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="formChecker.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title> Web Store </title>
+</head>
+
+<body class="html">
+    <h1>Welcome to the Weirdest Web Store on the Internet!</h1>
+    <h2>Go ahead and shop around.</h2>
+    <img src="highfive.jpeg">
+    <img src="handshake.jpeg">
+    <img src="bearhug.jpeg">
+    <form onsubmit="return check()" action="customerBackend.php" method="post">
+        <p class="info">
+            Username: <input type="text" placeholder="name@domain.com" id="userName" value="" required><br>
+            Password: <input type="password" name="password" placeholder="password" id="password" value="" required>
+        </p><br>
+        <br>
+        <p class="cart">
+            Shopping Cart:<br>
+            $3 Crisp High-Five (Qnty: 0-100): <input type="number" name="fives" id="fives" value="0" min="0"><br>
+            $7 Firm Hand Shake (Qnty: 0-100): <input type="number" name="shakes" id="shakes" value="0" min="0"><br>
+            $15 Warm Bear Hug (Qnty: 0-100): <input type="number" name="hugs" id="hugs" value="0" min="0">
+        </p><br>
+        <p class="ship">
+            Shipping:<br>
+            <input type="radio" name="shipping" value="Five Day">Free Five Day <br>
+            <input type="radio" name="shipping" value="Two Day">$7 Two Day <br>
+            <input type="radio" name="shipping" value="Overnight">$15 Overnight <br>
+        </p>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+    </form>
+</body>
+
+</html>

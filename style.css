@@ -1,0 +1,34 @@
+p.info{
+  color: red;
+  font-family: "Times New Roman";
+  font-size: 16pt;
+}
+p.cart{
+  color: black;
+  font-family: "Times New Roman";
+  font-size: 16pt;
+}
+p.ship{
+  color: blue;
+  font-family: "Times New Roman";
+  font-size: 16pt;
+}
+
+h1 {
+    color: mediumpurple;
+    font-family: "Times New Roman";
+}
+
+h2 {
+    color: green;
+    font-family: "Times New Roman";
+}
+
+body{
+  background-color: lightcyan;
+}
+
+table{
+    border-color: red;
+    border-style: solid;
+}
